@@ -7,7 +7,9 @@ var max = document.getElementById('max')
 var min = document.getElementById('min')
 
 
-btn.addEventListener("click", function() {
+
+
+function fetchAPI() {
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&units=metric&appid=bfb87668e9273df2abf40e71283c1dbc')
         .then(response => response.json())
         .then(data => {
@@ -19,4 +21,12 @@ btn.addEventListener("click", function() {
         })
 
     .catch(error => alert("Wrong city name!"))
-})
+}
+
+btn.addEventListener("click", fetchAPI)
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("btn").click();
+    }
+});

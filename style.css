@@ -36,6 +36,7 @@
         max-width: 250px;
         margin: 0 auto;
         border: none;
+        padding-left: 2px;
     }
     
     #btn {
