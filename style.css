@@ -1,0 +1,100 @@
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        position: relative;
+        height: 100vh;
+        color: white;
+        background: #4568DC;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #B06AB3, #4568DC);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #B06AB3, #4568DC);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 500px;
+        width: 400px;
+    }
+    
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #input {
+        font-size: 20px;
+        max-width: 250px;
+        margin: 0 auto;
+        border: none;
+    }
+    
+    #btn {
+        margin-top: 20px;
+        height: 30px;
+        width: 100px;
+        outline: none;
+        background: white;
+        border: none;
+        border-radius: 5%;
+        font-size: 14px;
+    }
+    
+    #btn:active {
+        transform: scale(.97);
+    }
+    
+    #city {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 30px;
+    }
+    
+    .data {
+        display: flex;
+        justify-content: center;
+        justify-items: flex-end;
+        gap: 30px;
+        margin-top: 70px;
+    }
+    
+    #temp {
+        font-size: 110px;
+    }
+    
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #weather {
+        font-size: 30px;
+    }
+    
+    .fas {
+        display: flex;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    
+    .divmax,
+    .divmin {
+        display: flex;
+        margin-top: 5px;
+    }
+    
+    #max,
+    #min {
+        font-size: 20px;
+        width: 100px;
+    }
