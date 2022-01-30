@@ -48,6 +48,7 @@
         border: none;
         border-radius: 5%;
         font-size: 14px;
+        cursor: pointer;
     }
     
     #btn:active {
